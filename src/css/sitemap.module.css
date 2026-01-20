@@ -1,0 +1,71 @@
+.cc-map-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.cc-map-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cc-map-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.cc-map-subtitle {
+  font-size: 0.95rem;
+  color: #4b5563;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.cc-map-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .cc-map-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.cc-map-section {
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 1.2rem 1.1rem 1rem;
+  background: #ffffff;
+}
+
+.cc-map-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.cc-map-list {
+  padding-left: 1rem;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.cc-map-list li {
+  font-size: 0.84rem;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.cc-map-list a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.cc-map-list a:hover {
+  text-decoration: underline;
+}

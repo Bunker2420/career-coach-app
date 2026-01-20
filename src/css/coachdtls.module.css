@@ -1,0 +1,266 @@
+/* app/(coach)/coach/details/styles.module.css */
+
+.coachFormContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.formTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #111827;
+  text-align: center;
+}
+
+.successMessage {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #d1fae5;
+  border: 1px solid #10b981;
+  color: #065f46;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Form root spacing */
+.formRoot {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Grid */
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Inputs / textarea / select */
+.formInput,
+.formTextarea,
+.formSelect {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #ffffff;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.formInput {
+  height: 3rem;
+}
+
+.formInput:focus,
+.formTextarea:focus,
+.formSelect:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.formTextarea {
+  min-height: 6rem;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.formTextarea.bio {
+  min-height: 6rem;
+}
+
+.formTextarea.about {
+  min-height: 8rem;
+}
+
+/* Subjects select */
+.subjectsLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.subjectsMultiSelect {
+  height: 12rem;
+  background: #ffffff;
+}
+
+/* Checkbox */
+.formLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #374151;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.formCheckbox {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Submit button */
+.submitButton {
+  width: 100%;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: all 0.2s ease;
+}
+
+.submitButton:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .coachFormContainer {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .formTitle {
+    font-size: 1.5rem;
+  }
+
+  .subjectsMultiSelect {
+    height: 10rem;
+  }
+
+  .submitButton {
+    padding: 0.875rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+/* Hide native multi-select box but keep it in DOM */
+.hiddenSelect {
+  display: none;
+}
+
+/* Wrapper */
+.subjectsWrapper {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.75rem 0.75rem 0.9rem;
+  background: #f9fafb;
+}
+
+/* Chips area */
+.chipContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  min-height: 2rem;
+}
+
+.chip {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.5);
+}
+
+.chip:active {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+.chipPlaceholder {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* Options list */
+.optionList {
+  max-height: 180px;
+  overflow-y: auto;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.optionItem {
+  display: flex;
+  align-items: center;
+  padding: 0.35rem 0.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.12s ease;
+}
+
+.optionItem:hover {
+  background-color: #eef2ff;
+}
+
+.optionCheckbox {
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.optionTitle {
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+/* Scrollbar style (optional, webkit only) */
+.optionList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.optionList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.optionList::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 999px;
+}

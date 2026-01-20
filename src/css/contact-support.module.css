@@ -1,0 +1,128 @@
+.cc-contact-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.cc-contact-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cc-contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.cc-contact-subtitle {
+  font-size: 0.95rem;
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cc-contact-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.cc-contact-card {
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem 1.4rem;
+  background: #ffffff;
+}
+
+.cc-contact-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.3rem;
+}
+
+.cc-contact-section-text {
+  font-size: 0.86rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.cc-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.cc-contact-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cc-contact-label {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.cc-contact-input,
+.cc-contact-textarea {
+  width: 100%;
+  font-size: 0.86rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.6rem;
+  border: 1px solid #d1d5db;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.cc-contact-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.cc-contact-submit-button {
+  margin-top: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.45);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.cc-contact-submit-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(37, 99, 235, 0.55);
+}
+
+.cc-contact-submit-button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.4);
+}
+
+.cc-contact-note {
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.cc-contact-alt {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.cc-contact-email {
+  font-weight: 600;
+  color: #2563eb;
+}

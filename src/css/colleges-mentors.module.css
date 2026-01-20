@@ -1,0 +1,67 @@
+.cc-cm-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.cc-cm-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cc-cm-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.cc-cm-subtitle {
+  font-size: 0.95rem;
+  color: #4b5563;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.cc-cm-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.cc-cm-card {
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 1.3rem 1.2rem 1.1rem;
+  background: #ffffff;
+}
+
+.cc-cm-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.cc-cm-text {
+  font-size: 0.86rem;
+  color: #374151;
+  margin-bottom: 0.45rem;
+}
+
+.cc-cm-list {
+  padding-left: 1rem;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.cc-cm-list li {
+  font-size: 0.84rem;
+  color: #374151;
+  margin-bottom: 0.3rem;
+}
+
+.cc-cm-email {
+  font-weight: 600;
+  color: #2563eb;
+}

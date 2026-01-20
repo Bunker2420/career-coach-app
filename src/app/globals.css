@@ -1,0 +1,19 @@
+/* Page-level layout for sticky footer */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* body as flex column */
+.cc-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* main takes remaining height */
+.cc-main {
+  flex: 1;
+}

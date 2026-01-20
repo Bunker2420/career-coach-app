@@ -1,0 +1,69 @@
+.cc-resume-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.cc-resume-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cc-resume-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.cc-resume-subtitle {
+  font-size: 0.95rem;
+  color: #4b5563;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.cc-resume-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.cc-resume-card {
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 1.2rem 1.1rem 1rem;
+  background: #ffffff;
+}
+
+.cc-resume-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.cc-resume-list {
+  padding-left: 1rem;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.cc-resume-list li {
+  font-size: 0.84rem;
+  color: #374151;
+  margin-bottom: 0.3rem;
+}
+
+.cc-resume-note-section {
+  margin-top: 0.6rem;
+}
+
+.cc-resume-note {
+  font-size: 0.82rem;
+  color: #6b7280;
+  border-radius: 0.75rem;
+  border: 1px dashed #cbd5f5;
+  background-color: #f9fafb;
+  padding: 0.9rem 0.8rem;
+}

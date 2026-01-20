@@ -1,0 +1,84 @@
+/* app/admin/students/Students.module.css */
+
+.container {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #111827;
+}
+
+/* Table Wrapper for rounded corners and shadow */
+.tableWrapper {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden; /* Ensures child elements don't overflow the rounded corners */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f9fafb;
+  padding: 16px 24px;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f3f4f6;
+  color: #4b5563;
+  vertical-align: middle;
+}
+
+/* Remove bottom border from last row */
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.username {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Delete Button Styles */
+.deleteBtn {
+  background-color: #ef4444; /* Red */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #dc2626; /* Darker Red */
+  transform: translateY(-1px);
+}
+
+/* Loading/Disabled state for Server Actions */
+.deleteBtn:disabled {
+  background-color: #fca5a5; /* Lighter red */
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.7;
+}

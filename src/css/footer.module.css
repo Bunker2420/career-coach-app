@@ -1,0 +1,127 @@
+/* Container */
+.cc-footer {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 4rem;
+  font-size: 14px;
+  color: #717171;
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Top 3 columns */
+.cc-footer-top {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 40px 24px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* columns + vertical lines */
+.cc-footer-column {
+  padding: 0 24px;
+}
+
+.cc-footer-column + .cc-footer-column {
+  border-left: 1px solid #e5e5e5;
+}
+
+.cc-footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 12px;
+}
+
+.cc-footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cc-footer-list li + li {
+  margin-top: 8px;
+}
+
+.cc-footer-list a {
+  color: #717171;
+  text-decoration: none;
+}
+
+.cc-footer-list a:hover {
+  text-decoration: underline;
+}
+
+/* Divider line under columns */
+.cc-footer-divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 0;
+}
+
+/* Bottom center block */
+.cc-footer-bottom {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px 40px 24px;
+  text-align: center;
+}
+
+/* copyright */
+.cc-footer-copy {
+  color: #717171;
+  margin-bottom: 8px;
+}
+
+/* social icons row */
+.cc-footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.cc-footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cc-footer-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* bottom links row */
+.cc-footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cc-footer-links a {
+  color: #717171;
+  text-decoration: none;
+}
+
+.cc-footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 768px) {
+  .cc-footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-footer-column {
+    padding: 16px 0;
+    border-left: none;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .cc-footer-column:first-child {
+    border-top: none;
+  }
+}

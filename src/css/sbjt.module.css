@@ -1,0 +1,332 @@
+/* app/student/subjects/[slug]/subject.module.css */
+
+.subjectPage {
+  max-width: 1120px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #0f172a;
+  line-height: 1.7;
+}
+
+/* Hero */
+
+.subjectHero {
+  margin-bottom: 2rem;
+}
+
+.subjectTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.subjectTitle {
+  font-size: clamp(1.9rem, 2.3vw, 2.4rem);
+  font-weight: 700;
+  margin: 0.6rem 0 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.subjectShort {
+  max-width: 720px;
+  font-size: 0.98rem;
+  color: #374151;
+}
+
+/* Layout */
+
+.subjectLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 2.3fr) minmax(0, 1fr);
+  gap: 2.25rem;
+  align-items: flex-start;
+}
+
+.subjectMain {
+  min-width: 0;
+}
+
+/* Sections */
+
+.subjectSection {
+  margin-bottom: 2rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.subjectSection:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.subjectSectionTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  letter-spacing: -0.01em;
+}
+
+.subjectBody {
+  font-size: 0.98rem;
+  color: #111827;
+}
+
+/* Lists */
+
+.bulletList {
+  list-style: disc;
+  padding-left: 1.4rem;
+  margin: 0.4rem 0 0;
+  font-size: 0.96rem;
+  color: #111827;
+}
+
+.bulletList li + li {
+  margin-top: 0.25rem;
+}
+
+/* Chips for skills */
+
+.chipList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.chip {
+  padding: 0.2rem 0.8rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 0.8rem;
+  border: 1px solid #bfdbfe;
+}
+
+/* Career stages */
+
+.stageList {
+  list-style: none;
+  padding: 0;
+  margin: 0.3rem 0 0;
+}
+
+.stageItem {
+  padding: 0.9rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.stageItem + .stageItem {
+  margin-top: 0.75rem;
+}
+
+.stageHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.stageBadge {
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.stageTitle {
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+/* FAQ */
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.faqItem {
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  padding: 0.65rem 0.85rem;
+}
+
+.faqItem[open] {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+.faqQuestion {
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faqQuestion::-webkit-details-marker {
+  display: none;
+}
+
+.faqQuestion::after {
+  content: "▾";
+  float: right;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.faqItem[open] .faqQuestion::after {
+  content: "▴";
+}
+
+.faqAnswer {
+  margin-top: 0.45rem;
+  font-size: 0.93rem;
+  color: #374151;
+}
+
+/* Sidebar */
+
+.subjectSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebarCard {
+  padding: 1rem 1.1rem;
+  border-radius: 0.9rem;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+.sidebarTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.sidebarHighlight {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.sidebarText {
+  font-size: 0.88rem;
+  color: #4b5563;
+}
+
+.sidebarLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+
+.sidebarLinks li + li {
+  margin-top: 0.25rem;
+}
+
+.sidebarLinks a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.sidebarLinks a:hover {
+  text-decoration: underline;
+}
+
+.sidebarList {
+  list-style: disc;
+  padding-left: 1.1rem;
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+
+.sidebarList li + li {
+  margin-top: 0.25rem;
+}
+
+.sidebarBold {
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .subjectLayout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .subjectSidebar {
+    order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .subjectPage {
+    margin-top: 1.8rem;
+    padding-inline: 1.1rem;
+  }
+
+  .subjectTitle {
+    font-size: 1.6rem;
+  }
+}
+
+.subjectPage {
+  max-width: 1120px;
+  margin: 1.8rem auto;          /* was 2.5rem */
+  padding: 0 1.5rem 1.5rem;     /* bottom was 3rem */
+}
+
+/* Sections */
+.subjectSection {
+  margin-bottom: 1.3rem;        /* was 2rem */
+  padding-bottom: 1rem;         /* was 1.6rem */
+}
+
+/* FAQ items */
+.faqList {
+  gap: 0.4rem;                  /* was 0.6rem */
+}
+
+.faqItem {
+  padding: 0.5rem 0.75rem;      /* was 0.65rem 0.85rem */
+}
+
+/* Sidebar cards */
+.sidebarCard {
+  padding: 0.8rem 0.9rem;       /* was 1rem 1.1rem */
+}
+
+/* Mobile tweak */
+@media (max-width: 640px) {
+  .subjectPage {
+    margin-top: 1.2rem;         /* was 1.8rem */
+    padding-inline: 0.9rem;     /* was 1.1rem */
+  }
+}

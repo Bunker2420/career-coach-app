@@ -1,0 +1,205 @@
+/* Container for the whole page */
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+/* --- Section 1: Upload Card --- */
+.upload-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  margin-bottom: 30px;
+  border: 1px solid #eaeaea;
+}
+
+.upload-card h1 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #111;
+}
+
+.file-input-wrapper {
+  margin-bottom: 20px;
+}
+
+.file-input {
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.submit-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* --- Section 2: Results & Animation --- */
+.result-section {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.review-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* --- Section 3: Chat Section --- */
+.chat-section {
+  margin-top: 40px; /* equivalent to mt-10 */
+  padding-top: 24px; /* equivalent to pt-6 */
+  border-top: 1px solid #e5e7eb;
+}
+
+.chat-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.chat-subtitle {
+  color: #6b7280; /* text-gray-500 */
+  font-size: 0.875rem; /* text-sm */
+  margin-bottom: 16px;
+}
+
+.chat-box {
+  background-color: #f9fafb; /* bg-gray-50 */
+  padding: 16px;
+  border-radius: 8px;
+  height: 300px; /* h-64 equivalent (slightly taller for visibility) */
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Bubbles */
+.message-bubble {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 80%;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.user-msg {
+  background-color: #f3e8ff; /* bg-purple-100 */
+  margin-left: auto; /* ml-auto */
+  text-align: right;
+  color: #4c1d95;
+}
+
+.ai-msg {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  color: #374151;
+}
+
+.empty-chat {
+  color: #9ca3af;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Chat Input Area */
+.chat-input-area {
+  display: flex;
+  gap: 8px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+
+.chat-input:focus {
+  border-color: #000;
+}
+
+.send-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.send-btn:disabled {
+  background-color: #555;
+}
+/* --- Loading / Typing Animation --- */
+
+.loading-bubble {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  min-width: 60px;
+}
+
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.typing-indicator span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #9ca3af; /* Gray dots */
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.typing-indicator span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% { 
+    transform: scale(0);
+  } 
+  40% { 
+    transform: scale(1);
+  }
+}

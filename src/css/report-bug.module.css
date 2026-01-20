@@ -1,0 +1,126 @@
+.cc-bug-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.cc-bug-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cc-bug-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.cc-bug-subtitle {
+  font-size: 0.95rem;
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cc-bug-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.cc-bug-form-card {
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem 1.4rem;
+  background: #ffffff;
+}
+
+.cc-bug-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.3rem;
+}
+
+.cc-bug-section-text {
+  font-size: 0.86rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.cc-bug-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.cc-bug-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cc-bug-label {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.cc-bug-input,
+.cc-bug-textarea {
+  width: 100%;
+  font-size: 0.86rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.6rem;
+  border: 1px solid #d1d5db;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.cc-bug-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.cc-bug-note {
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+.cc-bug-submit-button {
+  margin-top: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.45);
+  transition: transform 0.1s ease, box-shadow 0.1s ease,
+    background-color 0.15s ease;
+}
+
+.cc-bug-submit-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(37, 99, 235, 0.55);
+}
+
+.cc-bug-submit-button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.4);
+}
+
+.cc-bug-submit-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+  box-shadow: none;
+}

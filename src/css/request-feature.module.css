@@ -1,0 +1,117 @@
+.cc-feature-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.cc-feature-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cc-feature-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.cc-feature-subtitle {
+  font-size: 0.95rem;
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cc-feature-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.cc-feature-card {
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem 1.4rem;
+  background: #ffffff;
+}
+
+.cc-feature-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.3rem;
+}
+
+.cc-feature-section-text {
+  font-size: 0.86rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.cc-feature-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.cc-feature-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cc-feature-label {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.cc-feature-input,
+.cc-feature-textarea {
+  width: 100%;
+  font-size: 0.86rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.6rem;
+  border: 1px solid #d1d5db;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.cc-feature-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.cc-feature-submit-button {
+  margin-top: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 10px 24px rgba(22, 163, 74, 0.45);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.cc-feature-submit-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(22, 163, 74, 0.55);
+}
+
+.cc-feature-submit-button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(22, 163, 74, 0.4);
+}
+
+.cc-feature-note {
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}

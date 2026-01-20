@@ -1,0 +1,131 @@
+.studentHome {
+  max-width: 1120px;
+  margin: 2.5rem auto 3.5rem;
+  padding: 0 1.5rem;
+}
+
+/* big, elegant like your header */
+.studentHomeTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: #111827;
+}
+
+/* responsive grid stays the same */
+.studentHomeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+
+/* card: glassy, colorful border glow, matches navbar pills */
+.studentCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem 1.7rem 1.4rem;
+  border-radius: 1.4rem;
+  background: radial-gradient(circle at top left, #f5f3ff 0, #f9fafb 45%, #eef2ff 100%);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  text-decoration: none;
+  color: #111827;
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.12),
+    0 0 0 1px rgba(148, 163, 184, 0.15);
+  overflow: hidden;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background 220ms ease,
+    outline 180ms ease;
+}
+
+/* subtle gradient stripe in the corner */
+.studentCardAccent {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 0 0, rgba(129, 140, 248, 0.26), transparent 55%),
+    radial-gradient(circle at 100% 0, rgba(236, 72, 153, 0.23), transparent 55%),
+    radial-gradient(circle at 0 100%, rgba(56, 189, 248, 0.22), transparent 55%);
+  opacity: 0.55;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+/* put content above accent */
+.studentCard > *:not(.studentCardAccent) {
+  position: relative;
+  z-index: 1;
+}
+
+/* hover: lift + stronger glow, but still elegant */
+.studentCard:hover {
+  transform: translateY(-6px) scale(1.01);
+  border-color: rgba(129, 140, 248, 0.9);
+  box-shadow:
+    0 22px 55px rgba(79, 70, 229, 0.3),
+    0 0 0 1px rgba(129, 140, 248, 0.7);
+  background: radial-gradient(circle at top left, #eef2ff 0, #f9fafb 40%, #fdf2ff 100%);
+}
+
+/* title */
+.studentCardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+  color: #111827;
+}
+
+/* small code text */
+.studentCardCode {
+  font-size: 0.86rem;
+  color: #6b7280;
+  margin-bottom: 0.55rem;
+}
+
+/* description */
+.studentCardDesc {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 1.1rem;
+}
+
+/* footer row so the Link sits in the same place on all cards */
+.studentCardFooter {
+  margin-top: auto;
+  padding-top: 0.4rem;
+}
+
+/* pill-style link that matches your header buttons */
+.studentCardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #4c1d95;
+  background: rgba(237, 233, 254, 0.9);
+  border: 1px solid rgba(196, 181, 253, 0.9);
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.18);
+  transition:
+    background 150ms ease,
+    color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
+}
+
+.studentCardLink:hover {
+  background: linear-gradient(135deg, #4c1d95, #7c3aed);
+  color: #f9fafb;
+  box-shadow: 0 10px 24px rgba(76, 29, 149, 0.4);
+  transform: translateY(-1px);
+}

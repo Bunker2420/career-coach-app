@@ -1,0 +1,223 @@
+/* Page background aligns with header gradient */
+.pageWrapper {
+  min-height: 100vh;
+  padding: 3rem 1.5rem 4rem;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #020617 0, #020617 40%, #020617 100%);
+  color: #e5e7eb;
+}
+
+/* Main card: same dark navy as header bar, softer glow */
+.formCard {
+  width: 100%;
+  max-width: 1100px;
+  background: #020617;
+  border-radius: 28px;
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.85),
+    0 0 0 1px rgba(15, 23, 42, 0.9);
+  animation: fadeInUp 320ms ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.formHeader h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.4rem;
+  color: #f9fafb;
+}
+
+.formHeader p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  max-width: 560px;
+}
+
+/* Sections: same dark as page, subtle border like cards in your header */
+.form {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.section,
+.sectionTwoCol {
+  padding: 1.3rem 1.3rem 1.5rem;
+  border-radius: 22px;
+  background: #020617;
+  border: 1px solid rgba(51, 65, 85, 0.9);
+  box-shadow: 0 10px 32px rgba(15, 23, 42, 0.8);
+  transition:
+    transform 150ms ease-out,
+    box-shadow 150ms ease-out,
+    border-color 150ms ease-out,
+    background-color 150ms ease-out;
+}
+
+.section:hover,
+.sectionTwoCol:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.95);
+  border-color: rgba(148, 163, 184, 0.9);
+  background-color: #02091c;
+}
+
+.section h2 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: #e5e7eb;
+}
+
+.subText {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 0.75rem;
+}
+
+/* Layout grids */
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.15rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-size: 0.84rem;
+  color: #d1d5db;
+}
+
+.hint {
+  font-size: 0.76rem;
+  color: #9ca3af;
+}
+
+/* Inputs: match header search bar feel */
+.field input,
+.field textarea {
+  border-radius: 999px;
+  border: 1px solid rgba(75, 85, 99, 0.9);
+  background: #020617;
+  padding: 0.7rem 1rem;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  outline: none;
+  transition:
+    border-color 150ms ease-out,
+    box-shadow 150ms ease-out,
+    background-color 150ms ease-out,
+    transform 80ms ease-out;
+}
+
+.field textarea {
+  border-radius: 16px;
+  min-height: 90px;
+  resize: vertical;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #6b7280;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #bfdbfe;
+  box-shadow: 0 0 0 1px rgba(191, 219, 254, 0.5);
+  background-color: #020a1f;
+  transform: translateY(-1px);
+}
+
+/* Resource + side-by-side sections */
+.resourceRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.sectionTwoCol {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Actions: match nav pill buttons style */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.6rem;
+}
+
+/* Primary button styled like your header pills but stronger */
+.primaryButton {
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1.9rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #0f172a;
+  background: linear-gradient(135deg, #e0f2fe, #bfdbfe);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.85);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(0);
+  transition:
+    transform 120ms ease-out,
+    box-shadow 140ms ease-out,
+    background 140ms ease-out;
+}
+
+.primaryButton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.25), transparent 55%);
+  opacity: 0;
+  transition: opacity 160ms ease-out;
+}
+
+.primaryButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.95);
+  background: linear-gradient(135deg, #bfdbfe, #e0f2fe);
+}
+
+.primaryButton:hover::after {
+  opacity: 1;
+}
+
+.primaryButton:active {
+  transform: translateY(1px) scale(0.99);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .formCard {
+    padding: 1.9rem 1.3rem 2.1rem;
+  }
+}
