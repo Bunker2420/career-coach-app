@@ -37,13 +37,13 @@ Unlike static guidance sites, this is a dynamic **Full-Stack Application** featu
 ---
 
 ## 🛠️ Tech Stack
-
- Domain         Technologies 
- **Frontend**   Next.js 15 (App Router), React, CSS Modules, Responsive Design 
- **Backend**    Next.js Server Actions, Node.js API Routes 
- **Database**   MongoDB Atlas, Mongoose (Schema Validation) 
- **Auth**       JSON Web Tokens (JWT), Jose, Bcrypt (Password Hashing) 
- **Deployment** Vercel (Edge Network) 
+| Domain | Technologies |
+| :--- | :--- |
+| **Frontend** | Next.js 15 (App Router), React, CSS Modules, Responsive Design |
+| **Backend** | Next.js Server Actions, Node.js API Routes |
+| **Database** | MongoDB Atlas, Mongoose (Schema Validation) |
+| **Auth** | JSON Web Tokens (JWT), Jose, Bcrypt (Password Hashing) |
+| **Deployment** | Vercel (Edge Network) |
 
 ---
 🔮 Future Improvements
