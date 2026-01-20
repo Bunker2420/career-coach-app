@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Career Coach Platform
 
-## Getting Started
+> A full-stack career guidance application built with Next.js, connecting students with structured career roadmaps and expert coaching.
 
-First, run the development server:
+## 🔗 Live Demo
+**[Visit the Live Site Here](https://career-coach-app-teal.vercel.app)** *(Hosted on Vercel)*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧐 Overview
+The **Career Coach Platform** solves the confusion students face when choosing a career path. It provides curated roadmaps, skill breakdowns, and a connection to mentors. 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Unlike static guidance sites, this is a dynamic **Full-Stack Application** featuring Role-Based Access Control (RBAC), real-time database interactions, and a responsive UI.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Key Features
 
-## Learn More
+### 🔐 Authentication & Security
+* **Role-Based Access Control:** Distinct portals for **Admins**, **Students**, and **Coaches**.
+* **Secure Sessions:** Custom JWT-based authentication with HTTP-only cookies.
+* **Middleware Protection:** Edge-compatible middleware to protect sensitive routes (`/admin`, `/dashboard`).
 
-To learn more about Next.js, take a look at the following resources:
+### 🎓 Student Portal
+* **Dynamic Roadmaps:** Interactive guides for career paths (Full Stack, AI, DevOps, etc.).
+* **Detailed Insights:** Salary ranges, required skills, and "Day in the Life" breakdowns.
+* **Profile Management:** Custom profile creation with progress tracking.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Coach portal
+* Manages his active students...
+* Give Feedback to his students...
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🛡️ Admin Dashboard
+* **Content Management:** CRUD operations for adding new Subjects and Roadmaps.
+* **User Management:** Ability to view and remove students/coaches.
+* **Cascade Deletion:** Smart database logic to clean up related data when a user is removed.
+* Adding new content to the app...
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ Domain         Technologies 
+ **Frontend**   Next.js 15 (App Router), React, CSS Modules, Responsive Design 
+ **Backend**    Next.js Server Actions, Node.js API Routes 
+ **Database**   MongoDB Atlas, Mongoose (Schema Validation) 
+ **Auth**       JSON Web Tokens (JWT), Jose, Bcrypt (Password Hashing) 
+ **Deployment** Vercel (Edge Network) 
+
+---
+🔮 Future Improvements
+[ ] Real-time Chat: Implementing Socket.io for live student-coach messaging.
+[ ] Payment Gateway: Stripe integration for premium mentorship booking.
+
+👨‍💻 Author
+Ruthwick - Full Stack Developer & DSA Enthusiast
+[leetcode profile](https://leetcode.com/u/RuthTalk/)
