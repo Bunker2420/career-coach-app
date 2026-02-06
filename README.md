@@ -3,7 +3,7 @@
 > A full-stack career guidance application built with Next.js, connecting students with structured career roadmaps and expert coaching.
 
 ## 🔗 Live Demo
-**[Visit the Live Site Here](https://career-coach-app-teal.vercel.app)** *(Hosted on Vercel)*
+**[Visit the Live Site Here](https://career-coach-app-two.vercel.app/student/airesume)** *(Hosted on Vercel)*
 
 ---
 
