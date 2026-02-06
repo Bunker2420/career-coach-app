@@ -2,8 +2,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 const PDFParser = require("pdf2json");
 
-const API_KEY = 'AIzaSyAkZ0foIKLX8ls76G8TvB-xlO1Qqikdhs4'; 
-const genAI = new GoogleGenerativeAI(API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.G_API_KEY);
 
 function parsePDF(buffer) {
   return new Promise((resolve, reject) => {

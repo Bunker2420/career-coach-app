@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { getSessionFromCookie } from "../../../../../src/lib/authSession";
+export const maxDuration = 60;
 import ResumeInterface from "../../../../components/resumeclient"; // Import your new client component
 
 export default async function ResumePage() {
