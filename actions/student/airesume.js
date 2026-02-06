@@ -31,7 +31,7 @@ export async function analyzeResume(prevState, formData) {
     const resumeText = await parsePDF(buffer);
 
     // FIX: Updated to Gemini 3 (The 2026 Standard)
-    const model = genAI.getGenerativeModel({ model: "gemini-3-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-3-pro-preview" });
     
     const prompt = `
       You are an expert HR Resume Screener. 
