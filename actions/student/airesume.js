@@ -1,4 +1,5 @@
 "use server";
+export const maxDuration = 60;
 import { GoogleGenerativeAI } from "@google/generative-ai";
 const PDFParser = require("pdf2json");
 
